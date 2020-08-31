@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="cardNumProvider" value="data/cardData.xlsx"/>
+  <test thread-count="5" name="VerifyAPITest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="Sheet" value="cardNum"/>
+    <classes>
+      <class name="com.MRA.GolfStore.FrictionLessTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="frictionLessTest" invocation-numbers="0 1 2"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.MRA.GolfStore.FrictionLessTest -->
+    </classes>
+  </test> <!-- VerifyAPITest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

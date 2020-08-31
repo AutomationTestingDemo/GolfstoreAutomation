@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="cardNumProvider" value="data/cardData.xlsx" />
+ <test name="VerifyAPITest">
+  <!-- <parameter name="browser" value="ChromeHeadLess" /> -->
+ <parameter name="browser" value="Chrome" />
+  <parameter name="Sheet" value="cardNum" />
+    <classes>
+      <class name="com.MRA.GolfStore.FrictionLessTest"/>
+<!--       <class name="com.MRA.GolfStore.EmailOTPChallengeTest"/>
+      <class name="com.MRA.GolfStore.MobileOTPChallengeTest"/>
+      <class name="com.MRA.GolfStore.DenyChallengeTransactionTest"/>
+      <class name="com.MRA.GolfStore.InteractionCounterTest"/>
+      <class name="com.MRA.GolfStore.RejectTransactionTest"/>
+      <class name="com.MRA.GolfStore.CancelTransactionTest"/> -->
+    </classes>
+ </test>
+<!--      <test name="VerifyAPINegavtiveTest">
+    <parameter name="browser" value="ChromeHeadLess" />
+  <parameter name="Sheet" value="VerifyAPIData" />
+    <classes>
+      <class name="com.MRA.GolfStore.NegativeVerifyAPIEmailOTPChallengeTest"/>
+      <class name="com.MRA.GolfStore.NegativeVerifyAPIMobileOTPChallengeTest"/>
+      <class name="com.MRA.GolfStore.NegativeVerifyAPIDenyChallengeTransactionTest"/>  
+    </classes>
+  </test> -->
+</suite>
